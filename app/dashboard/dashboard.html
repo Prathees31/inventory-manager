@@ -17,7 +17,7 @@
         </div>
     </div>
     </nav>
-    <div class="container-fluid table-box">
+    <div class="container-fluid table-box" ng-controller="dashboardCtrl">
 
         <div class="panel panel-success">
             <div class="panel-heading">Inventory/PO List</div>
@@ -35,7 +35,15 @@
                         </tr>
                     </thead>
                         <tbody>
-
+                            <tr ng-repeat="po in sampledata">
+                                <td>{{po.id}}</td>
+                                <td>{{po.ponum}}</td>
+                                <td>{{po.supplier}}</td>
+                                <td>{{po.podate}}</td>
+                                <td>{{po.status}}</td>
+                                <td>{{po.paymentstatus}}</td>
+                                <td>{{po.delivery}}</td>
+                            </tr>
                         </tbody>
                 </table>
             </div>
