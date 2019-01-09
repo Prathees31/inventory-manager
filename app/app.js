@@ -2,10 +2,14 @@
 
 // Declare app level module which depends on views, and core components
 angular.module('inverterManager', [
-  'ngRoute'
+  'ngRoute',
+  'im.home'
 ]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+config(['$routeProvider', function($routeProvider) {
+ 
+  $routeProvider.otherwise(
+    {
+      redirectTo: '/home'}
+    );
 
-  $routeProvider.otherwise({redirectTo: '/'});
 }]);

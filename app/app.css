@@ -6,3 +6,35 @@ body{
     background-position: center center;
     color: #fff;
 }
+.sign-box{
+    float: left;
+    width: 100%;
+    padding: 50px 0;
+}
+.form-box{
+    padding: 50px 30px; 
+    position:relative;
+}
+.container{
+    background: #e8e5e570;
+    border-radius: 10px;
+    box-shadow: 15px 20px 0px rgba(0,0,0,0.1);
+}
+.form-box h2{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 23px;
+    color: #cba37e;
+}
+.form-box h2:after{
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background: #720b26;
+    display: block;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
