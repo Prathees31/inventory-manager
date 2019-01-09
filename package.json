@@ -6,12 +6,14 @@
   "license": "MIT",
   "dependencies": {
     "angular": "1.7.x",
-    "bootstrap": "3.3.x",
+    "angular-cookies": "^1.7.5",
     "angular-loader": "^1.7.5",
     "angular-route": "^1.7.5",
+    "angularfire": "^2.3.0",
+    "bootstrap": "3.3.x",
+    "font-awesome": "~4.5.0",
     "html5-boilerplate": "0.0.1",
-    "jquery": "3.3.x",
-    "font-awesome": "~4.5.0"
+    "jquery": "3.3.x"
   },
   "devDependencies": {
     "angular-mocks": "1.7.x",
@@ -28,7 +30,7 @@
     "postinstall": "npm run copy-libs",
     "update-deps": "npm update",
     "postupdate-deps": "npm run copy-libs",
-    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,html5-boilerplate/dist,font-awesome,jquery/dist}/**/*\" app/lib -C",
+    "copy-libs": "cpx \"node_modules/{angular,angularfire/dist,angular-*,bootstrap/dist,html5-boilerplate/dist,font-awesome,jquery/dist}/**/*\" app/lib -C",
     "prestart": "npm install",
     "start": "http-server ./app -a localhost -p 8000 -c-1",
     "pretest": "npm install",
