@@ -60,3 +60,35 @@ body{
 .table-box{
     margin-top: 60px;
 }
+.panel-heading {
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+.panel{
+    border-radius: 2px;
+    background-color: #16173b73;
+}
+.panel-success {
+    border-color: #5f5f7b;
+}
+.panel-success > .panel-heading {
+    color: #ffffff;
+    font-weight: bolder;
+    background-color: #16173b73;
+    border-color: #5f5f7b;
+}
+.panel-body {
+    /* padding-left: 0px; */
+    /* padding-right: 0px; */
+    padding: 15px 0 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #5f5f7b;
+}
+.table>thead {
+    background-color: #0b1233cf;
+    text-transform: uppercase;
+}
